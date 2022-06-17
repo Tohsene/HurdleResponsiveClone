@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@600&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color: hsl(192, 100%, 9%);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.btn{
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    padding: 15px 60px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.btn-primary{
+    background-color: hsl(322, 100%, 66%);
+}
+.container{
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+}
+.center{
+    text-align: center;
+}
+.flex>div{
+    flex: 1;
+}
+.align-start{
+    align-items: flex-start;
+}
+.flex{
+    display: flex;
+    
+    align-items: center;
+}
+header{
+    background-image: url('./bg-hero-desktop.svg');
+    background-size: cover;
+    background-position: center center;
+    padding: 40px 0;
+    background-color: hsl(193, 100%, 93%);
+}
+nav{
+    justify-content: space-between;
+    margin-bottom: 40px;
+    align-items: center;
+}
+.box{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    margin: 40px 0;
+    padding: 60px;
+}
+.small-box{
+    display: inline-block;
+    margin-bottom: -50%;
+    z-index: 1;
+}
+.box img{
+    width: 80%;
+}
+footer{
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    padding: 180px 0 60px;
+}
+footer ul{
+    /* padding: 0; */
+    list-style-type: none;
+}
+footer ul li{
+    margin-bottom: 20px;
+}
+footer .circle{
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+}
+footer p{
+    text-align: right;
+}
+.loner{
+    font-size: 12px;
+    margin-bottom: -40px;
+}
+.gongoaso{
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        text-align: center;
+    }
+    nav.flex{
+        flex-direction: row;
+    }
+    .header-img{
+        margin-top: 40px;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .box-reverse-mobile{
+        flex-direction: column-reverse;
+    }
+    footer ul{
+        padding: 0;
+        width: 100%;
+    }
+}
